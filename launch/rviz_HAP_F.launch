@@ -31,7 +31,6 @@
 	<param name="enable_imu_bag" type="bool" value="$(arg imu_bag)"/>
 	
 	<node name="livox_lidar_F" pkg="livox_ros_driver2" type="livox_ros_driver2_node" required="true" output="screen" args="$(arg cmdline_arg)"/>
-	
 
 	<group if="$(arg rviz_enable)">
 		<node name="livox_rviz" pkg="rviz" type="rviz" respawn="true" args="-d $(find livox_ros_driver2)/config/display_point_cloud_ROS1.rviz"/>
