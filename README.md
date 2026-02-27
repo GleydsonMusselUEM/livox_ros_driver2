@@ -522,11 +522,11 @@ For more infomation about the HAP config, please refer to:
 
 ## 6. FAQ
 
-### 6.1 launch with "livox_lidar_rviz_HAP.launch" but no point cloud display on the grid?
+### 6.1 launch with "livox_lidar_R_nodeviz_HAP.launch" but no point cloud display on the grid?
 
 Please check the "Global Options - Fixed Frame" field in the RViz "Display" pannel. Set the field value to "livox_frame" and check the "PointCloud2" option in the pannel.
 
-### 6.2 launch with command "ros2 launch livox_lidar_rviz_HAP_launch.py" but cannot open shared object file "liblivox_sdk_shared.so" ?
+### 6.2 launch with command "ros2 launch livox_lidar_R_nodeviz_HAP_launch.py" but cannot open shared object file "liblivox_sdk_shared.so" ?
 
 Please add '/usr/local/lib' to the env LD_LIBRARY_PATH.
 
